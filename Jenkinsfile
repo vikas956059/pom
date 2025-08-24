@@ -20,7 +20,6 @@ pipeline{
        scp target/mywebapp.war root@13.235.134.192:/usr/share/tomcat/webapps
        ssh root@13.235.134.192 "sudo systemctl restart tomcat"
        '''
-       }
      }  
     }
    } 

@@ -8,7 +8,7 @@ pipeline{
      }
    stage("maven") {
      steps{
-      sh " mvn clean pacakge"
+      sh " mvn clean package"
       }
     }
    stage("deploy to tomcat") {

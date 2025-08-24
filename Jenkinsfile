@@ -14,7 +14,8 @@ pipeline{
    stage("deploy to tomcat") {
     steps{
        sh '''
-       scp target/mywebapp.war root@13.235.134.192:/usr/share/tomcat/webapps
+       VERSION=$(date +%Y%m%d%H%M%S)
+       scp target/mywebapp.war root@13.235.134.192:/usr/share/tomcat/webapps/myweapp##$VERSION.war
        ssh root@13.235.134.192 "sudo systemctl restart tomcat"
        '''
      }  

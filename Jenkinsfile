@@ -11,7 +11,7 @@ pipeline{
       sh " mvn clean pacakge"
       }
     }
-   stage("deploy to tomcat")
+   stage("deploy to tomcat") {
     steps{
      sshagent([remote-server]) {
        sh '''

@@ -1,6 +1,6 @@
 <html>
   <body>
-    <h1>Welcome to My Java Web App1</h1>
+    <h1>Welcome to My Java Web App2</h1>
     <p>Click <a href="hello">here</a> to call the servlet.</p>
   </body>
 </html>
